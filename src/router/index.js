@@ -2,7 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Projet from "../views/Projet.vue";
+import Skills from "../views/Skills.vue";
 import NotFound from "../views/NotFound.vue";
+
 Vue.use(VueRouter);
 
 const routes = [{
@@ -19,6 +21,14 @@ const routes = [{
         component: Projet,
         meta: {
             title: "My projets",
+        },
+    },
+    {
+        path: "/skills",
+        name: "SKills",
+        component: Skills,
+        meta: {
+            title: "Skills",
         },
     },
     {

@@ -31,21 +31,4 @@ export default {
 </script>
 
 <style>
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-h1,
-h2,
-h3,
-h4,
-span,
-div,
-p {
-  animation: 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0s 1 slideInFromLeft;
-}
 </style>
