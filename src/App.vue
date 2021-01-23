@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <fragment>
+    <Navigation />
+    <main id="app">
+      <router-view />
+      <atom-spinner
+        v-if="!isloaded"
+        :animation-duration="1000"
+        :size="100"
+      />
+    </main>
+  </fragment>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navigation from "./components/Navigation";
+import { AtomSpinner } from "epic-spinners";
 export default {
-  name: 'App',
+  data: () => {
+    return {
+      isloaded: false,
+    };
+  },
+  mounted() {
+    document.onreadystatechange = () => {
+      if (document.readyState == "complete") {
+        this.isloaded = true;
+      }
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    Navigation,
+    AtomSpinner,
+  },
+  watch: {
+    $route(to) {
+      document.title = to.meta.title || "";
+    },
+  },
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.atom-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 </style>
