@@ -41,7 +41,12 @@
 </template>
 
 <script>
+const song = require("../assets/easterEgg/ohnono.mp3");
 export default {
+  mounted() {
+    var audio = new Audio(song);
+    audio.play();
+  },
   data() {
     return {
       title: "Home",

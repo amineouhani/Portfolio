@@ -1,6 +1,5 @@
 <template>
   <fragment>
-    <Navigation />
     <nav class="nav max auto marg">
       <ul class="app">
         <li>
@@ -22,7 +21,9 @@
   </fragment>
 </template>
 <script>
-export default {};
+export default {
+
+};
 </script>
 <style>
 .space {
