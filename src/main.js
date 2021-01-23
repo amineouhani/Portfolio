@@ -15,7 +15,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
-    faAt,
     faAward,
     faBolt,
     faCode,
@@ -25,7 +24,6 @@ import {
 library.add(
     faGithub,
     faLinkedin,
-    faAt,
     faAward,
     faBolt,
     faExclamationCircle,

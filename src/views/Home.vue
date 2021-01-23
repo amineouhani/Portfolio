@@ -4,7 +4,7 @@
       <h1>
         Hi, I'm <span class="fancy">A</span>mine<span class="fancy">.</span>
       </h1>
-      <p>Developer web and <bold>student</bold> from Bordeaux</p>
+      <p>Developer web and <bold>student</bold> from <bold>Bordeaux</bold></p>
       <span class="handle">
         <a href="https://twitter.com/fuckthisimoutd" target="_blank"
           >@amineohn</a

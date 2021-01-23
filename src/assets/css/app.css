@@ -1,7 +1,22 @@
+:root {
+    --config-dark-text: #7380b1;
+    --config-dark-background: #2b2b2b;
+    --config-dark-text-display: #fbfbfb;
+    --config-dark-items: #3a3a3a;
+    --config-dark-position: #0000004a;
+    --config-light-text: #73b19a;
+    --config-light-background: #fff;
+    --config-light-text-body: #111;
+    --config-light-items: #fdfdfd;
+    --config-light-text-display: #2b2b2b;
+    --config-light-display: #9b9b9b;
+    --config-light-config: #e7eaed;
+}
+
 html,
 body {
-    background-color: #fff;
-    color: #111;
+    background-color: var(--config-light-background);
+    color: var(--config-light-text-body);
     height: 100%;
 }
 
@@ -97,7 +112,7 @@ abbr[title] {
 }
 
 #social-icons_icons {
-    color: #2b2b2b;
+    color: var(--config-light-text-display);
     margin-left: 5px;
     font-size: 20px;
 }
@@ -149,13 +164,17 @@ main {
 span {
     display: inline-block;
     margin-top: 0.275em;
-    color: #9b9b9b;
+    color: var(--config-light-display);
     letter-spacing: 0.5px;
     text-decoration: none;
 }
 
+.city {
+    color: var(--config-light-text) !important;
+}
+
 .handle a:hover {
-    color: #ff7e78;
+    color: var(--config-light-text);
     transition: all 0.3s ease-out;
 }
 
@@ -172,15 +191,15 @@ span {
 }
 
 .fancy {
-    color: #ff7e78 !important;
+    color: var(--config-light-text) !important;
 }
 
 .spinner-line {
-    border-left-color: #ff7e78 !important;
+    border-left-color: var(--config-light-text) !important;
 }
 
 .spinner-circle {
-    color: #ff7e78 !important;
+    color: var(--config-light-text) !important;
 }
 
 main {
@@ -199,7 +218,7 @@ main {
     position: absolute;
     width: 100%;
     z-index: 100;
-    background: #fdfdfd !important;
+    background: var(--config-dark-text-display) !important;
     height: 100px;
     border-radius: inherit;
     display: flex;
@@ -216,50 +235,53 @@ whitecol {
 @media (prefers-color-scheme: dark) {
     html,
     body {
-        background-color: #2b2b2b !important;
-        color: #fbfbfb !important;
+        background-color: var(--config-dark-background) !important;
+        color: var(--config-dark-text-display) !important;
         height: 100%;
     }
     .app a {
-        color: #fbfbfb !important;
+        color: var(--config-dark-text-display) !important;
         text-decoration: none;
     }
     .handle a,
     span {
         display: inline-block;
         margin-top: 0.275em;
-        color: #78ff90 !important;
+        color: var(--config-dark-text) !important;
         letter-spacing: 0.5px;
         text-decoration: none;
     }
     #social-icons_icons {
-        color: #fff !important;
+        color: var(--config-dark-text-display) !important;
     }
     .app a:hover {
-        color: #78ff90 !important;
+        color: var(--config-dark-text) !important;
         transition: all 0.4s ease-out;
     }
+    .city {
+        color: var(--config-dark-text) !important;
+    }
     #social-icons_icons:hover {
-        color: #78ff90 !important;
+        color: var(--config-dark-text) !important;
         transition: all 0.4s ease-out;
     }
     whitecol {
-        color: #fbfbfb !important;
+        color: var(--config-dark-text-display) !important;
     }
     .fancy {
-        color: #78ff90 !important;
+        color: var(--config-dark-text) !important;
     }
     .spinner-line {
-        border-left-color: #78ff90 !important;
+        border-left-color: var(--config-dark-text) !important;
     }
     .spinner-circle {
-        color: #78ff90 !important;
+        color: var(--config-dark-text) !important;
     }
     .items-text {
         position: absolute;
         width: 100%;
         z-index: 100;
-        background: #3a3a3a !important;
+        background: var(--config-dark-items) !important;
         height: 100px;
         border-radius: inherit;
         display: flex;
@@ -267,6 +289,9 @@ whitecol {
         justify-content: flex-start;
         flex-direction: column;
         padding: 15px;
+    }
+    .position {
+        background-color: var(--config-dark-position) !important;
     }
 }
 
@@ -348,20 +373,11 @@ whitecol {
 
 .config {
     left: 10px;
-    background: #e7eaed;
+    background: var(--config-light-config);
 }
 
 .config .con-icon {
     padding-right: 10px;
-}
-
-.loading {
-    background-color: #3e3e3e3d;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 9;
-    position: absolute;
 }
 
 .app,
@@ -374,17 +390,17 @@ ul {
 }
 
 .app a {
-    color: #2b2b2b;
+    color: var(--config-light-text-display);
     text-decoration: none;
 }
 
 .app a:hover {
-    color: #ff7e78;
+    color: var(--config-light-text);
     transition: all 0.4s ease-out;
 }
 
 #social-icons_icons:hover {
-    color: #ff7e78;
+    color: var(--config-light-text);
     transition: all 0.4s ease-out;
 }
 

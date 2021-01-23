@@ -3,11 +3,7 @@
     <Navigation />
     <main id="app">
       <router-view />
-      <atom-spinner
-        v-if="!isloaded"
-        :animation-duration="1000"
-        :size="100"
-      />
+      <atom-spinner v-if="!isloaded" :animation-duration="1000" :size="100" />
     </main>
   </fragment>
 </template>

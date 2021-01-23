@@ -9,7 +9,7 @@
         <font-awesome-icon class="icons html5" :icon="['fab', 'html5']" />
       </p>
       <div class="container">
-        <div class="skills html"><position class="position">75%</position></div>
+        <div class="skills html"><position class="position">60%</position></div>
       </div>
 
       <p><font-awesome-icon class="icons css3" :icon="['fab', 'css3']" /></p>
@@ -21,7 +21,7 @@
         <font-awesome-icon class="icons javascript" :icon="['fab', 'js']" />
       </p>
       <div class="container">
-        <div class="skills js"><position class="position">65%</position></div>
+        <div class="skills js"><position class="position">45%</position></div>
       </div>
 
       <p><font-awesome-icon class="icons php8" :icon="['fab', 'php']" /></p>
@@ -31,14 +31,13 @@
 
       <p><font-awesome-icon class="icons vuejs" :icon="['fab', 'vuejs']" /></p>
       <div class="container">
-        <div class="skills vue"><position class="position">50%</position></div>
+        <div class="skills vue"><position class="position">45%</position></div>
       </div>
     </div>
   </fragment>
 </template>
 <script>
-export default {
-};
+export default {};
 </script>
 <style>
 .icons {
@@ -63,10 +62,9 @@ export default {
   margin: 0 auto !important;
 }
 .position {
-    margin-right: 1px;
-    background-color: #fdfdfd4a;
-    padding: 9px;
-    border-radius: 20px;
+  background-color: #fdfdfd4a;
+  padding: 10px;
+  border-radius: 20px;
 }
 .skills {
   text-align: right;
@@ -77,7 +75,7 @@ export default {
 }
 
 .html {
-  width: 70%;
+  width: 60%;
   background-color: #e07040;
 }
 .css {
@@ -85,7 +83,7 @@ export default {
   background-color: #52b6e7;
 }
 .js {
-  width: 65%;
+  width: 45%;
   background-color: #f2b836;
 }
 .php {
@@ -93,7 +91,7 @@ export default {
   background-color: #7982aa;
 }
 .vue {
-  width: 50%;
+  width: 45%;
   background-color: #50c791;
 }
 </style>

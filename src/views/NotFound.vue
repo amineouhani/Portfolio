@@ -6,8 +6,8 @@
         <span class="fancy">I</span>s <span class="fancy">O</span>ccured<span
           class="fancy"
         >
-          p<whitecol>lease</whitecol> c<whitecol>ome</whitecol>
-          b<whitecol>ack</whitecol>.</span
+          P<whitecol>lease</whitecol> C<whitecol>ome</whitecol>
+          B<whitecol>ack</whitecol>.</span
         >
 
         <font-awesome-icon
