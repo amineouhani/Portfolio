@@ -3,23 +3,21 @@
     <div class="big">
       <h1>
         Hi, I'm
-        <span @click="Open()" class="fancy pointer">{{letter}}</span>{{name}}<span
-          class="fancy"
-          >.</span
-        >
+        <span @click="Open()" class="fancy pointer">{{ letter }}</span
+        >{{ name }}<span class="fancy">.</span>
       </h1>
-      <p>Developer web from <bold>{{city}}</bold></p>
+      <p>
+        Developer web from <bold>{{ city }}</bold>
+      </p>
       <span class="handle">
-        <a v-bind:href="twitterLink" target="_blank"
-          >{{ twitter }}</a
-        >
+        <a v-bind:href="twitter" target="_blank">{{ twitterTag }}</a>
       </span>
       <div class="social-icons">
         <a
           class="social-icons__link"
           rel="me"
           title="GitHub"
-          href="https://github.com/amineouhani"
+          v-bind:href="github"
           target="_blank"
         >
           <font-awesome-icon
@@ -31,7 +29,7 @@
           class="social-icons__link"
           rel="me"
           title="Linkedin"
-          href="https://www.linkedin.com/in/amine-ouhani-41b362176/"
+          v-bind:href="linkedin"
           target="_blank"
         >
           <font-awesome-icon
@@ -45,7 +43,7 @@
           rel="me"
           title="Discord"
           style="margin-top: -19px"
-          href="https://dsc.bio/reactjs"
+          v-bind:href="discordbio"
           target="_blank"
         >
           <font-awesome-icon
@@ -74,7 +72,7 @@
 <script>
 //<img //v-bind:src="spotify.recenttracks.track[0].image[2]['#text']"/>
 const song = require("../assets/easterEgg/ohnono.mp3");
-import set from '../config';
+import set from "../config";
 import axios from "axios";
 export default {
   data() {
@@ -84,7 +82,11 @@ export default {
       letter: set.letter,
       city: set.city,
       name: set.name,
-      twitter: set.twitter
+      twitter: set.twitter,
+      twitterTag: set.twitterTag,
+      github: set.github,
+      discordbio: set.discordbio,
+      linkedin: set.linkedin,
     };
   },
   created() {
@@ -141,25 +143,4 @@ export default {
 </script>
 
 <style>
-img {
-  width: 50px;
-  height: 50px;
-  margin-right: 5px;
-  border-radius: 5px;
-}
-spotify {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.items {
-  opacity: 0.8;
-  cursor: pointer;
-}
-.items:before,
-.items:hover,
-.items:after {
-  opacity: 1;
-  transition: all 0.4s ease-out;
-}
 </style>
