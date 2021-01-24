@@ -3,15 +3,15 @@
     <div class="big">
       <h1>
         Hi, I'm
-        <span @click="Open()" class="fancy pointer">A</span>mine<span
+        <span @click="Open()" class="fancy pointer">{{letter}}</span>{{name}}<span
           class="fancy"
           >.</span
         >
       </h1>
-      <p>Developer web from <bold>Bordeaux</bold></p>
+      <p>Developer web from <bold>{{city}}</bold></p>
       <span class="handle">
-        <a href="https://twitter.com/fuckthisimoutd" target="_blank"
-          >@amineohn</a
+        <a v-bind:href="twitterLink" target="_blank"
+          >{{ twitter }}</a
         >
       </span>
       <div class="social-icons">
@@ -74,12 +74,17 @@
 <script>
 //<img //v-bind:src="spotify.recenttracks.track[0].image[2]['#text']"/>
 const song = require("../assets/easterEgg/ohnono.mp3");
+import set from '../config';
 import axios from "axios";
 export default {
   data() {
     return {
       title: "Home",
       spotify: null,
+      letter: set.letter,
+      city: set.city,
+      name: set.name,
+      twitter: set.twitter
     };
   },
   created() {
@@ -88,7 +93,7 @@ export default {
   mounted() {
     axios
       .get(
-        "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=amineprojet&api_key=62816987eec5933a0fad21657ab72e57&format=json&limit=1"
+        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&$user=${set.apiUser}&api_key=${set.apiKey}&format=json&limit=1`
       )
       .then((response) => {
         this.spotify = response.data;
@@ -105,7 +110,7 @@ export default {
     updateSpotify() {
       axios
         .get(
-          "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=amineprojet&api_key=62816987eec5933a0fad21657ab72e57&format=json&limit=1"
+          `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${set.apiUser}&api_key=${set.apiKey}&format=json&limit=1`
         )
         .then((response) => {
           this.spotify = response.data;
