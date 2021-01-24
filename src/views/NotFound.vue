@@ -11,8 +11,7 @@
         >
 
         <font-awesome-icon
-          class="fancy"
-          style="font-size: 40px; margin-left: 9px"
+          class="fancy error-icon"
           :icon="['fas', 'exclamation-circle']"
         />
       </h1>
@@ -31,4 +30,5 @@ export default {
 </script>
 
 <style>
+
 </style>

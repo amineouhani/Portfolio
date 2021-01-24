@@ -57,7 +57,6 @@
           <div v-if="spotify" class="items-text spotify">
             <p class="title flex">
               <font-awesome-icon
-                href="https://spotify.com"
                 class="spotify-icon"
                 :icon="['fab', 'spotify']"
               />
@@ -74,6 +73,7 @@
 const song = require("../assets/easterEgg/ohnono.mp3");
 import set from "../config";
 import axios from "axios";
+const link = "https://www.last.fm/music/"
 export default {
   data() {
     return {
@@ -87,6 +87,7 @@ export default {
       github: set.github,
       discordbio: set.discordbio,
       linkedin: set.linkedin,
+      link: link
     };
   },
   created() {

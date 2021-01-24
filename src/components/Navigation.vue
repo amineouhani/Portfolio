@@ -13,9 +13,6 @@
         <li class="space">
           <router-link to="/blog">Blog</router-link>
         </li>
-        <li class="space">
-          <router-link to="/skills">Skills</router-link>
-        </li>
       </ul>
     </nav>
   </fragment>

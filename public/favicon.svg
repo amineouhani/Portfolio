@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 234 207" style="enable-background:new 0 0 234 207;" xml:space="preserve">
+<style>
+			.st0 {
+				fill:#fbfbfb !important;
+				border-radius: 20px
+			}
+			.st1 { 
+				fill:#73b19a !important;
+			}
+			.st2 { 
+				font-family:'Pacifico-Regular';
+			}
+			.st3 { 
+				font-size:100px;
+			}
+			@media (prefers-color-scheme: dark) {
+				.st0 { 
+					fill:#282431 !important;
+				}
+				.st1 { 
+					fill:#7380B1 !important;
+				}
+			}
+</style>
+<rect y="-3.6" class="st0" width="234" height="214.2" rx="30" ry="30"/>
+<text transform="matrix(1 0 0 1 66.3892 139.3553)" id="themed" class="st1 st2 st3">A.</text>
+</svg>

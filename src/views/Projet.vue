@@ -28,20 +28,21 @@ export default {
         {
           id: 1,
           title: "Cloudify",
-          text: "Simple Bot discord with multiples features with NuxtJS & Bulma.",
-          link: "https://cloudify.fun"
+          text:
+            "Simple Bot discord with multiples features with NuxtJS & Bulma.",
+          link: "https://cloudify.fun",
         },
         {
           id: 2,
           title: "Portfolio",
           text: "My portfolio with VueJS & Axios",
-          link: "https://amineouhani.fr"
+          link: "https://amineouhani.fr",
         },
         {
           id: 3,
           title: "FoundSneakers",
           text: "Compare and found sneakers at best price Node.JS & Bootstrap.",
-          link: "https://foundsneakers.store"
+          link: "https://foundsneakers.store",
         },
       ],
     };
@@ -49,5 +50,4 @@ export default {
 };
 </script>
 <style>
-
 </style>

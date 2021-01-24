@@ -1,8 +1,8 @@
 :root {
     --config-dark-text: #7380b1;
-    --config-dark-background: #2b2b2b;
+    --config-dark-background: #16131d;
     --config-dark-text-display: #f1f1f1cc;
-    --config-dark-items: #3a3a3a;
+    --config-dark-items: #282431;
     --config-dark-position: #0000004a;
     --config-dark-display: #d6d5d5;
     --config-light-text: #73b19a;
@@ -239,7 +239,28 @@ whitecol {
     color: #2b2b2b !important;
 }
 
+.spotify-icon {
+    font-size: 30px;
+    color: #45d75f !important;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (prefers-color-scheme: dark) {
+    .spotify-icon {
+        font-size: 25px;
+        color: var(--config-dark-text) !important;
+        margin-right: 5px;
+        display: flex;
+    }
+    .st0 {
+        fill: #282431;
+    }
+    .st1 {
+        fill: #7380B1;
+    }
     html,
     body {
         background-color: var(--config-dark-background) !important;
@@ -249,6 +270,12 @@ whitecol {
     .app a {
         color: var(--config-dark-text-display) !important;
         text-decoration: none;
+    }
+    .items-text p {
+        font-size: 0.75rem;
+        pointer-events: none;
+        color: var(--config-dark-selected) !important;
+        opacity: 1;
     }
     .handle a,
     span {
@@ -353,6 +380,13 @@ whitecol {
     }
 }
 
+.items-text p {
+    font-size: 0.75rem;
+    pointer-events: none;
+    color: var(--config-light-text-display);
+    opacity: 1;
+}
+
 .container-items {
     max-width: 48rem;
 }
@@ -392,12 +426,6 @@ whitecol {
 .items-text h3 {
     font-size: 0.9rem;
     padding-bottom: 5px;
-    pointer-events: none;
-}
-
-.items-text p {
-    font-size: 0.75rem;
-    opacity: 0.6;
     pointer-events: none;
 }
 
@@ -522,15 +550,6 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.spotify-icon {
-    font-size: 30px;
-    color: #45d75f;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex {
@@ -706,5 +725,16 @@ spotify {
     }
     .box {
         max-width: 100%;
+    }
+    .big {
+        font-size: 11px;
+    }
+    .error-icon {
+        font-size: 40px;
+        margin-left: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
