@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 import Projet from "../views/Projet.vue";
 import Skills from "../views/Skills.vue";
 import NotFound from "../views/NotFound.vue";
-
+import Blog from "../views/Blog.vue";
 Vue.use(VueRouter);
 
 const routes = [{
@@ -25,10 +25,18 @@ const routes = [{
     },
     {
         path: "/skills",
-        name: "SKills",
+        name: "Skills",
         component: Skills,
         meta: {
             title: "Skills",
+        },
+    },
+    {
+        path: "/blog",
+        name: "Blog",
+        component: Blog,
+        meta: {
+            title: "Blog",
         },
     },
     {

@@ -12,6 +12,8 @@ import {
     faVuejs,
     faReact,
     faCss3,
+    faSpotify,
+    faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
@@ -19,6 +21,7 @@ import {
     faBolt,
     faCode,
     faExclamationCircle,
+    faBlog
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -33,7 +36,10 @@ library.add(
     faVuejs,
     faReact,
     faCss3,
-    faCode
+    faCode,
+    faSpotify,
+    faDiscord,
+    faBlog
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;

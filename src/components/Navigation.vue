@@ -3,7 +3,7 @@
     <nav class="nav max auto marg">
       <ul class="app">
         <li>
-          <router-link style="font-weight: 800; margin-right: 1.5rem" to="/">
+          <router-link class="logo" to="/">
             <font-awesome-icon :icon="['fas', 'bolt']"
           /></router-link>
         </li>
