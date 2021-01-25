@@ -6,7 +6,7 @@
         <span @click="Open()" class="fancy pointer">{{ letter }}</span
         >{{ name }}<span class="fancy">.</span>
       </h1>
-      <p>
+      <p class="text">
         Developer web from <bold>{{ city }}</bold>
       </p>
       <span class="handle">
@@ -73,7 +73,7 @@
 const song = require("../assets/easterEgg/ohnono.mp3");
 import set from "../config";
 import axios from "axios";
-const link = "https://www.last.fm/music/"
+const link = "https://www.last.fm/music/";
 export default {
   data() {
     return {
@@ -87,7 +87,7 @@ export default {
       github: set.github,
       discordbio: set.discordbio,
       linkedin: set.linkedin,
-      link: link
+      link: link,
     };
   },
   created() {
@@ -96,7 +96,7 @@ export default {
   mounted() {
     axios
       .get(
-        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&$user=${set.apiUser}&api_key=${set.apiKey}&format=json&limit=1`
+        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${set.apiUser}&api_key=${set.apiKey}&format=json&limit=1`
       )
       .then((response) => {
         this.spotify = response.data;

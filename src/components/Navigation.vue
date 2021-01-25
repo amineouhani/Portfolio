@@ -1,26 +1,24 @@
 <template>
   <fragment>
-    <nav class="nav max auto marg">
+    <nav class="nav max auto marg mobile">
       <ul class="app">
         <li>
           <router-link class="logo" to="/">
-            <font-awesome-icon :icon="['fas', 'bolt']"
+            <font-awesome-icon class="item-nav" :icon="['fas', 'bolt']"
           /></router-link>
         </li>
         <li class="space">
-          <router-link to="/projet">Projects</router-link>
+          <router-link class="item-nav" to="/projet">Projects</router-link>
         </li>
         <li class="space">
-          <router-link to="/blog">Blog</router-link>
+          <router-link class="item-nav" to="/blog">Blog</router-link>
         </li>
       </ul>
     </nav>
   </fragment>
 </template>
 <script>
-export default {
-
-};
+export default {};
 </script>
 <style>
 .space {

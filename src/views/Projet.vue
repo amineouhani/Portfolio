@@ -1,6 +1,6 @@
 <template>
   <fragment>
-    <h1 class="project auto">My projects</h1>
+    <h1 class="project auto mobile">My projects</h1>
     <div class="max auto marg">
       <div class="container-items auto">
         <div v-for="projet in projets" v-bind:key="projet.id" class="items">
@@ -50,4 +50,7 @@ export default {
 };
 </script>
 <style>
+.nav.mobile {
+      padding-left: 30px;
+}
 </style>

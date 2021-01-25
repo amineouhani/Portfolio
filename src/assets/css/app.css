@@ -737,4 +737,45 @@ spotify {
         align-items: center;
         margin: 0 auto;
     }
+    .body {
+        width: 100% !important;
+        margin-left: 20px;
+    }
+    .big h1 {
+        font-size: 4em;
+        line-height: 1.3;
+        letter-spacing: -0.03em;
+        margin: 0;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .handle {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    .item-nav {
+        font-size: 22px;
+    }
+    .box {
+        display: block;
+        width: 255px !important;
+        padding: 17px;
+        border-radius: 20px;
+        background-color: #f1f1f1cc;
+        top: 50%;
+        z-index: 9;
+        margin-top: 5px;
+        padding-bottom: 17px;
+    }
+    .items {
+        max-width: 500px;
+        padding: 20px;
+        height: 110px;
+        width: 275px !important;
+    }
+    .adjustement {
+        margin-left: -34px !important;
+        margin-top: 8px !important;
+    }
 }
