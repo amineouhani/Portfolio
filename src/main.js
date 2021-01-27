@@ -21,7 +21,10 @@ import {
     faBolt,
     faCode,
     faExclamationCircle,
-    faBlog
+    faBlog,
+    faMoon,
+    faSun,
+    faLightbulb
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -39,7 +42,10 @@ library.add(
     faCode,
     faSpotify,
     faDiscord,
-    faBlog
+    faBlog,
+    faMoon,
+    faSun,
+    faLightbulb
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;

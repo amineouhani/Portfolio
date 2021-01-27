@@ -4,21 +4,41 @@
       <ul class="app">
         <li>
           <router-link class="logo" to="/">
-            <font-awesome-icon class="item-nav" :icon="['fas', 'bolt']"
-          /></router-link>
+            <font-awesome-icon class="item-nav" :icon="['fas', 'bolt']" />
+          </router-link>
         </li>
-        <li class="space">
-          <router-link class="item-nav" to="/projet">Projects</router-link>
-        </li>
-        <li class="space">
-          <router-link class="item-nav" to="/blog">Blog</router-link>
+        <li
+          v-for="navigation in navigation"
+          v-bind:key="navigation.id"
+          class="space"
+        >
+          <router-link class="item-nav" v-bind:to="navigation.to">
+            {{navigation.name }}
+          </router-link>
         </li>
       </ul>
     </nav>
   </fragment>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      navigation: [
+        {
+          id: 1,
+          to: "/projects",
+          name: "Projects",
+        },
+        {
+          id: 2,
+          to: "/blog",
+          name: "Blog",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
 .space {

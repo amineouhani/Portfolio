@@ -1,10 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Projet from "../views/Projet.vue";
+import Project from "../views/Projects.vue";
 import Skills from "../views/Skills.vue";
-import NotFound from "../views/NotFound.vue";
 import Blog from "../views/Blog.vue";
+import NotFound from "../views/NotFound.vue";
 Vue.use(VueRouter);
 
 const routes = [{
@@ -16,11 +16,11 @@ const routes = [{
         },
     },
     {
-        path: "/projet",
-        name: "Projet",
-        component: Projet,
+        path: "/projects",
+        name: "Projects",
+        component: Project,
         meta: {
-            title: "My projets",
+            title: "My Projects",
         },
     },
     {

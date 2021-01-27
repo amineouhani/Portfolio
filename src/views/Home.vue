@@ -3,7 +3,9 @@
     <div class="big">
       <h1>
         Hi, I'm
-        <span @click="Open()" class="fancy pointer">{{ letter }}</span
+        <span @click="Open()" class="fancy pointer" data-tooltip="tutututu">{{
+          letter
+        }}</span
         >{{ name }}<span class="fancy">.</span>
       </h1>
       <p class="text">
@@ -60,7 +62,10 @@
                 class="spotify-icon"
                 :icon="['fab', 'spotify']"
               />
-              <spotify>{{ spotify.recenttracks.track[0].name }}</spotify>
+              <spotify v-if="loading"></spotify>
+              <spotify v-else>
+                {{ spotify.recenttracks.track[0].name }}
+              </spotify>
             </p>
           </div>
         </div>

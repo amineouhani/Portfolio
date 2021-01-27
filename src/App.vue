@@ -41,9 +41,4 @@ export default {
   align-items: center;
   margin: 0 auto;
 }
-#themed {
-  fill:#fbfbfb !important;
-}
-	.st0{fill:#fbfbfb !important;}
-	.st1{fill:#73b19a !important;}
 </style>
